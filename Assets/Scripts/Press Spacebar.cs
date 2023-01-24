@@ -5,15 +5,16 @@ using UnityEngine;
 public class PressAnyKey : MonoBehaviour
 {
     public KeyCode keyToPress;
-    public bool freezenOnStart = true;
+    public bool gameFrozen = false;
     public GameObject objectToHide;
 
     // Start is called before the first frame update
     void Start()
     {
-        if(freezenOnStart)
+        if(!gameFrozen)
         {
             Time.timeScale = 0;
+            gameFrozen= true;
         }
     }
 
