@@ -20,7 +20,7 @@ public class CloudsMove : MonoBehaviour
 
         if (transform.position.x < deadZone)
         {
-            Debug.Log("Pipe Destroy");
+            Debug.Log("Cloud Destroy");
             Destroy(gameObject);
         }
     }
